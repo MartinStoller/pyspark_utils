@@ -5,8 +5,8 @@ Gathering generalizable PySpark helper functions.
 
 ## Environments
 One challenge with a repository like this is the different Spark Environments.
-Influenced by my personal history i went for 2 separate directories:
-- `databricks` contains helper functions specific for databricks environments. When not working in Databricks or at with components like Unity Catalog, MLFlow or Delta Lake, this part should be irrelevant for you.
+Influenced by my personal history, I went for 2 separate directories:
+- `databricks` contains helper functions specific for databricks environments. When not working in Databricks or at least with components like Unity Catalog, MLFlow or Delta Lake, this part should be irrelevant for you.
 - `generic_projects` tries to be less platform specific, however, it is influenced by my previous projects outside of Databricks, which is mostly AWS Glue or local setup. Even when working in Databricks, some files and functions in here might still be helpful.
 
 
