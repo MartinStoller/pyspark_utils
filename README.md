@@ -2,6 +2,14 @@
 
 Gathering generalizable PySpark helper functions.
 
+
+## Environments
+One challenge with a repository like this is the different Spark Environments.
+Influenced by my personal history i went for 2 separate directories:
+- `databricks` contains helper functions specific for databricks environments. When not working in Databricks or at with components like Unity Catalog, MLFlow or Delta Lake, this part should be irrelevant for you.
+- `generic_projects` tries to be less platform specific, however, it is influenced by my previous projects outside of Databricks, which is mostly AWS Glue or local setup. Even when working in Databricks, some files and functions in here might still be helpful.
+
+
 ## Project structure
 The `generic_project` contains all kinds of files, functions and modules. Of course every project is
 different and not every project needs to import all of them. 
@@ -31,11 +39,5 @@ To keep the structure clean, i like to forbid the implementation of more methods
 All additional logic should go into `db.py` or `transformations.py` files in either the modue - or if generalizeable - in the shared or common modules.
 This way we keep clean ETL classes and a clear structure, which really helps with readability and debugging.
 I found that this structure is very intuitive to most people and new team members grasp and adopt it usually very quickly.
-
-## Environments
-One challenge with a repository like this is the different Spark Environments.
-Influenced by my personal history i went for 2 separate directories:
-- `databricks` contains helper functions specific for databricks environments. When not working in Databricks or at with components like Unity Catalog, MLFlow or Delta Lake, this part should be irrelevant for you.
-- `generic_projects` tries to be less platform specific, however, it is influenced by my previous projects outside of Databricks, which is mostly AWS Glue or local setup. Even when working in Databricks, some files and functions in here might still be helpful.
 
 
