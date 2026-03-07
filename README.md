@@ -1,6 +1,6 @@
 # My PySpark Utils
 
-Gathering generalizable PySpark helper functions.
+Gathering generalizable PySpark helper functions. I worked with over the years.
 
 
 ## Environments
